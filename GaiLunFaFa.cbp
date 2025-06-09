@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="GaiLunFaFa" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release">
+				<Option output="bin/Release/GaiLunFaFa" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="D:/App/MSYS2/mingw64/include/eigen3" />
+			<Add directory="D:/App/MSYS2/mingw64/include/suitesparse" />
+			<Add directory="D:/App/MSYS2/mingw64/include/vtk" />
+		</Compiler>
+		<Linker>
+			<Add option="-lcholmod" />
+			<Add option="-lvtkCommonCore -lvtkCommonDataModel -lvtkIOXML -lvtksys" />
+		</Linker>
+		<Unit filename="ElementBase.h" />
+		<Unit filename="FEMesh.h" />
+		<Unit filename="TensorCompute.h" />
+		<Unit filename="UsualElements.h" />
+		<Unit filename="common.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
