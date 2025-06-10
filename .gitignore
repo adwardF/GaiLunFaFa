@@ -1,0 +1,11 @@
+*.vtk
+*.a
+*.o
+*.so
+*.lib
+*.exe
+*.dll
+
+obj/
+bin/
+
